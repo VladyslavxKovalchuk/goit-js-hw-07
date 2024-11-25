@@ -11,7 +11,7 @@ const controls = document.querySelector('#controls');
 
 createButton.addEventListener('click', () => {
   const amount = Number(input.value);
-  if (amount > 1 || amount < 100) {
+  if (amount >= 1 && amount <= 100) {
     destroyBoxes();
     const boxesArray = [];
     for (let i = 0; i < amount; i += 1) {
